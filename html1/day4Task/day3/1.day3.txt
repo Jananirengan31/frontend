@@ -1,0 +1,23 @@
+1.HTML:
+     HTML (Hypertext Markup Language) used to create the structure of webpages.
+
+2.Root elements:
+     The <html> tag is called the root elements because it contains all HTML elements.
+
+3.Parent elements:
+     It contains another elements.
+
+4.Child elements:
+     An element that is placed inside another element.
+
+5.Container elements:
+     An elements that can contain HTML elements inside it.
+
+6.Difference between Head and Body:
+     Head contains webpage content and Body contains visible webpage content.
+
+7.Nested elements:
+     Html element is placed inside another element is called nested.
+
+8.DOM:
+     DOM(Document Object Model) is the tree structure created by the browser from the HTML.

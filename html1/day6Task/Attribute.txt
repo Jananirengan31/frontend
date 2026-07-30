@@ -1,0 +1,35 @@
+Attribute:
+     Attributes provide additional information about HTML elements.
+
+Attributes Written:
+      Attributes are Written inside the tag
+
+Syntax of an Attribute:
+      Attribute name="attribute value".
+
+Difference Between id and class:
+     id means unique
+     class means reusable.
+
+
+Href:
+     href (hyper reference ) it is a hyperlink destination.
+
+src:
+     source for image.
+
+alt:
+     Alternative text for the image if the image is broken.
+
+placeholder:
+     Displays hint text inside an input field.
+
+Global Attributes:
+     Attributes that can be used on almost every HTML element.
+
+Local attributes:
+     Attributes that work only on specific HTML elements.
+
+
+
+

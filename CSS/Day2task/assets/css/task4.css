@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+}
+
+.title{
+    width:200vh;
+    background-color:rgb(23, 185, 185);
+   text-align: center;
+   color: brown;
+}
+
+.title h2 {
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+.title p {
+    margin: 5px 0;
+}
+h1{
+    background-color: black;
+    color: rgb(10, 231, 98);
+    text-align: center;
+    width: 200vh;
+    height: 30vh;
+}

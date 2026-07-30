@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+}
+
+h2, p, span {
+    background-color: #255469;
+    text-align: center;
+    font-family: Arial, sans-serif;
+   
+}
+
+div {
+    width: 400px;
+    background-color: #FF8C00;
+    color:chartreuse;
+    width: 200vh;
+    height: 20vh;
+    text-align: center;
+}
+
+.zoho {
+    background-color: #15ae57;
+    width: 200vh;
+    height: 20vh;
+    text-align: center;
+}
+
+.freshworks {
+    background-color: #FF8C00;
+    width: 200vh;
+    height: 20vh;
+    text-align: center;
+}
+
+.aspire {
+    background-color: #4682B4;
+    width: 200vh;
+    height: 20vh;
+    text-align: center;
+}
+
+.cts {
+    background-color: #8A2BE2;
+    width: 200vh;
+    height: 20vh;
+    text-align: center;
+}
+
+.tcs {
+    background-color: #DC143C; 
+    width: 200vh;
+    height: 20vh;
+    text-align: center;
+}

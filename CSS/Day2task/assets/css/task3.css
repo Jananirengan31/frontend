@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    background-color: black;
+    width: 200vh;
+    height: 20vh;
+    color: aqua;
+    text-align: center;
+}
+#cse{
+    background-color: rgb(137, 20, 247);
+    color: aqua;
+   
+    text-align: center;
+}
+#ece{
+    background-color: rgb(157, 109, 12);
+    color: aqua;
+   
+    text-align: center;
+}
+#it{
+      background-color: rgb(15, 28, 165);
+    color: aqua;
+    
+    text-align: center;
+}
+#eee{
+      background-color: rgb(51, 161, 17);
+    color: aqua;
+    
+    text-align: center;
+}
+#mech{
+      background-color: rgb(233, 30, 81);
+    color: aqua;
+   
+    text-align: center;
+}
+
+
+

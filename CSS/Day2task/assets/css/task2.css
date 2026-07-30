@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+}
+div{
+    background-color:aqua;
+    ;
+
+}
+.title{
+    color: blue;
+    height: 10vh;
+    width: 50vh;
+}
+#uni{
+    background-color: brown;
+    color:blueviolet;
+    
+}
+h1{
+    background-color: black;
+    color: blueviolet;
+}

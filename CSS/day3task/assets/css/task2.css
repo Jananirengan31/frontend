@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+}
+.product{
+        background-color: aquamarine;
+        height: 300px;
+        width: 300px;
+        padding: 20px;
+        border: solid 2px orange;
+        justify-content: center;
+}
+ p{
+    height: 200px;
+    width: 200px;
+    border: solid 2px white;
+    margin: auto;
+    justify-content: left;
+    padding: 20px;
+
+}

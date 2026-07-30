@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+}
+
+.section {
+    background-color: rgb(227, 18, 18);
+    width: 200vh;
+    height: 20vh;
+    color: aquamarine;
+    text-align: center;
+}
+
+#hospital-name {
+    color: darkred;
+    background-color: lightyellow;
+    text-align: center;
+    width: 200vh;
+    height: 20vh;
+}
+#uni{
+    color: darkred;
+    background-color: rgb(238, 238, 8);
+    text-align: center;
+    width: 200vh;
+    height: 20vh;
+}
