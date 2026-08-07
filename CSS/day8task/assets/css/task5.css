@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    background-color: brown;
+    color: aquamarine;
+    padding: 40px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+.para {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    line-height: 1.8;
+    font-size: 18px;
+    border-left: 5px solid #007BFF;
+}
+.para::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+    color: crimson;
+}
+
+.para::first-line {
+    color: blue;
+    font-weight: bold;
+}
+

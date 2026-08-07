@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+.box1{
+    display:none;
+}
+
+.box2{
+    visibility:hidden;
+    width:200px;
+    height:100px;
+    background-color:yellow;
+}
+
+.box3{
+    width:200px;
+    height:100px;
+    background-color:lightgreen;
+}

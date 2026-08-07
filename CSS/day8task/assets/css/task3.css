@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.parent{
+    background-color: cadetblue;
+    color: blue;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.student-list {
+    width: 300px;
+    margin: auto;
+    list-style-type: none;
+    padding: 0;
+}
+.student-list li {
+    background-color: white;
+    margin: 8px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.student-list li:first-child {
+    background-color: #4c86af;
+    color: white;
+    font-weight: bold;
+}
+.student-list li:last-child {
+    background-color: #FF5722;
+    color: white;
+    font-weight: bold;
+}

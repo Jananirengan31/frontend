@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.parent{
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px;
+}
+.heading {
+    margin: 20px 0;
+    font-size: 32px;
+    color: #333;
+}
+.heading::before {
+    content: "* ";
+    color: gold;
+    font-size: 35px;
+}
+.heading::after {
+    content: " !";
+    color: green;
+    font-size: 30px;
+}

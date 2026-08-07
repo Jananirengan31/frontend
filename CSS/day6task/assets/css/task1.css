@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+.content{
+    padding:30px;
+    line-height:1.8;
+}
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    background:#0b8e3b;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
