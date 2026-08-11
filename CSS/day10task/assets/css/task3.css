@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.section h1 {
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 10px;
+}
+.subtitle {
+    color: #666;
+    margin-bottom: 35px;
+}
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.employee-card {
+    width: 30%;
+    min-width: 280px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.employee-card:hover {
+    transform: translateY(-8px);
+}
+
+.employee-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.employee-card h2 {
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.employee-card h3 {
+    color: #007bff;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+
+    .employee-card {
+        width: 45%;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .team-section h1 {
+        font-size: 28px;
+    }
+
+    .employee-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
