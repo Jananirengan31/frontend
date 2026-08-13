@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            MyWebsite
+        </a>
+
+
+            <div class="navbar-nav ms-auto">
+
+                <div class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </div>
+
+                <div class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </div>
+
+                <div class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </div>
+
+                <div class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+
+        <button type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="0"
+                class="active">
+        </button>
+
+        <button type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="1">
+        </button>
+
+        <button type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="2">
+        </button>
+
+    </div>
+
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+
+            <img src="https://picsum.photos/id/1018/1200/500"
+                 class="d-block w-100"
+                 alt="Nature">
+
+            <div class="carousel-caption">
+                <h2>Beautiful Nature</h2>
+                <p>Explore the beauty of nature.</p>
+            </div>
+
+        </div>
+
+
+        <div class="carousel-item">
+
+            <img src="https://picsum.photos/id/1015/1200/500"
+                 class="d-block w-100"
+                 alt="Mountain">
+
+            <div class="carousel-caption">
+                <h2>Mountain View</h2>
+                <p>Enjoy amazing mountain views.</p>
+            </div>
+
+        </div>
+
+
+        <div class="carousel-item">
+
+            <img src="https://picsum.photos/id/1016/1200/500"
+                 class="d-block w-100"
+                 alt="Landscape">
+
+            <div class="carousel-caption">
+                <h2>Wonderful Landscape</h2>
+                <p>Discover beautiful places.</p>
+            </div>
+
+        </div>
+
+    </div>
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon"></span>
+
+    </button>
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next">
+
+        <span class="carousel-control-next-icon"></span>
+
+    </button>
+
+</div>
+<section id="products" class="py-5">
+
+    <div class="container">
+
+        <h2 class="text-center mb-4">Our Products</h2>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card h-100 shadow">
+
+                    <img src="https://picsum.photos/id/1/500/300"
+                         class="card-img-top"
+                         alt="Laptop">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Laptop
+                        </h5>
+
+                        <p class="card-text">
+                            High-performance laptop suitable for
+                            students and professionals.
+                        </p>
+
+                        <h5 class="text-success">
+                            50,000
+                        </h5>
+
+                        <button class="btn btn-primary">
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+<div class="col-lg-4 col-md-6">
+
+                <div class="card h-100 shadow">
+
+                    <img src="https://picsum.photos/id/20/500/300"
+                         class="card-img-top"
+                         alt="Camera">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Camera
+                        </h5>
+
+                        <p class="card-text">
+                            Capture your favorite moments with
+                            this high-quality camera.
+                        </p>
+
+                        <h5 class="text-success">
+                            35,000
+                        </h5>
+
+                        <button class="btn btn-primary">
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card h-100 shadow">
+
+                    <img src="https://picsum.photos/id/96/500/300"
+                         class="card-img-top"
+                         alt="Headphones">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Headphones
+                        </h5>
+
+                        <p class="card-text">
+                            Enjoy clear and powerful sound with
+                            wireless headphones.
+                        </p>
+
+                        <h5 class="text-success">
+                            3,000
+                        </h5>
+
+                        <button class="btn btn-primary">
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="bg-light py-5">
+
+    <div class="container">
+
+        <h2 class="text-center mb-4">
+            Registration Form
+        </h2>
+         <form>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Full Name
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Enter your name"
+                                       required>
+
+                            </div>
+
+
+                            <!-- Email -->
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Email
+                                </label>
+
+                                <input type="email"
+                                       class="form-control"
+                                       placeholder="Enter your email"
+                                       required>
+
+                            </div>
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Password
+                                </label>
+
+                                <input type="password"
+                                       class="form-control"
+                                       placeholder="Enter your password"
+                                       required>
+
+                            </div>
+
+
+
+</body>
+</html>

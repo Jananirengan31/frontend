@@ -3,14 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
-</head>
-<body>
-    <h1>Home</h1>
-    Assignment
+    <title> Assignments</title>
 
-    <a href="Bootstrap/day2Task/Task1.html">Bootstrap Day2 Task 1</a>
-    <a href="Bootstrap/day2Task/Task2.html">Bootstrap Day2 Task 2</a>
-    <a href="Bootstrap/day2Task/Task3.html">Bootstrap Day2 Task 3</a>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f5f9;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 35px;
+            font-size: 40px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            border-left: 5px solid #007bff;
+            padding-left: 10px;
+        }
+
+        .assignment {
+            margin-bottom: 35px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .links a {
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #0056b3;
+            transform: translateX(8px);
+        }
+
+        .assignment2 a {
+            background-color: #28a745;
+        }
+
+        .assignment2 a:hover {
+            background-color: #1e7e34;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 25px;
+                margin: 30px auto;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .links a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Home</h1>
+
+        <div class="assignment">
+            <h2>Bootstrap Assignment 1</h2>
+
+            <div class="links">
+                <a href="Bootstrap/day2Task/Task1.html">
+                    Bootstrap Day 2 - Task 1
+                </a>
+
+                <a href="Bootstrap/day2Task/Task2.html">
+                    Bootstrap Day 2 - Task 2
+                </a>
+
+                <a href="Bootstrap/day2Task/Task3.html">
+                    Bootstrap Day 2 - Task 3
+                </a>
+            </div>
+        </div>
+         <hr><hr>
+        <div class="assignment assignment2">
+            <h2>Bootstrap Assignment 2</h2>
+
+            <div class="links">
+                <a href="Bootstrap/Day3Task/index.html">
+                    Bootstrap Day 3 - Task 1
+                </a>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
