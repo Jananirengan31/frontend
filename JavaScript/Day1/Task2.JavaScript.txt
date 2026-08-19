@@ -1,0 +1,60 @@
+1.JavaScript:
+
+JavaScript is a high-level, interpreted programming language used to make web pages interactive and dynamic. It can be used for both frontend and backend development.
+
+2.variable:
+
+A variable is a named container used to store data in a program.
+
+3.variable declaration:
+
+Variable declaration means creating a variable by specifying its name.
+
+4.initialization:
+
+Initialization means giving a value to a variable when it is created.
+
+5. What is an assignment operator:
+
+The assignment operator = is used to assign a value to a variable.
+
+6. What are var, let and const:
+
+var, let, and const are keywords used to declare variables in JavaScript.
+
+7. Difference between var, let and const
+Feature	var	let	const
+Re-declaration		Yes	No	No
+Re-assignment	Yes	Yes	No
+Scope	Function	Block	Block
+
+8.ES6:
+
+ES6 stands for ECMAScript 2015. It is a major version of JavaScript that introduced many new features.
+
+Important ES6 features include:
+
+let and const
+Arrow functions
+Template literals
+Classes
+Destructuring
+Default parameters
+Spread and rest operators
+Promises
+Modules
+
+9.JavaScript Engine:
+
+A JavaScript Engine is a program that reads, interprets, and executes JavaScript code.
+
+Different browsers use different JavaScript engines:
+
+Chrome → V8
+Firefox → SpiderMonkey
+Safari → JavaScriptCore
+Microsoft Edge → V8
+
+10.V8:
+
+V8 is Google's open-source JavaScript engine. It is written in C++ and is used in Google Chrome and Node.js.

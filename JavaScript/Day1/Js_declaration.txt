@@ -1,0 +1,161 @@
+
+1. var javaNode
+2. var loginName
+3. var userProfile
+4. var emailAddress
+5. var ageValue
+6. var studentName
+7. var collegeName
+8. var manageName
+9. var courseCode
+10. var studentId
+11. var subjectName
+12. var teacherName
+13. var sectionName
+14. var rollNumber
+15. var examNumber
+16. var resultDate
+17. var markValue
+18. var gradePoints
+19. var attendanceRate
+20. var semesterName
+21. var academicYear
+22. var jobRole
+23. var teamMember
+24. var resumeProfile
+25. var skillLevel
+26. var projectTitle
+27. var userInterface
+28. var joinDate
+29. var startDate
+30. var workStatus
+31. var deadLine
+32. var deadLock
+33. var nodeJs
+34. var expressJs
+35. var callReact
+36. var employeeId
+37. var employeeName
+38. var zoomMeeting
+39. var meetingRoom
+40. var meetingTime
+41. var eventTime
+42. var bookingId
+43. var travelTime
+44. var travelDate
+45. var ticketCounter
+46. var ticketCode
+47. var passBook
+48. var password
+
+
+
+
+
+
+
+1. let arrivalTime
+2. let foodPrice
+3. let flightTicket
+4. let passBook
+5. let luggageCount
+6. let hotelNumber
+7. let checkoutDate
+8. let flightNumber
+9. let airportCode
+10. let menuItem
+11. let orderCount
+12. let orderNumber
+13. let customerId
+14. let customerName
+15. let productId
+16. let productName
+17. let productDetails
+18. let productCount
+19. let billAmount
+20. let billNumber
+21. let taxValue
+22. let waterTax
+23. let incomeTax
+24. let stockProduct
+25. let demandStatus
+26. let damandValue
+27. let unitPrice
+28. let salePrice
+29. let ProductTitle
+30. let fakeProduct
+31. let couponValue
+32. let couponTicket
+33. let couponCode
+34. let discountAmount
+35. let productStatus
+36. let paymentStatus
+37. let paymentDate
+38. let paymentId
+39. let transactionCode 
+40. let transactionValue
+41. let creditCard
+42. let debitCard
+43. let accountType
+44. let accountHolder
+45. let bankAccount
+46. let Backbranch
+47. let guestName
+48. let tableNumber
+
+
+
+
+
+
+
+1. const securityCode
+2. const bookName
+3. const authorName
+4. const pageCount
+5. const publisherName
+6. const chapterTitle
+7. const returnDate
+8. const readingStatus
+9. const movieTitle
+10. const directorName 
+11. const releaseDate
+12. const movieRating
+13. const actorName
+14. const epdisodeNumber
+15. const seriesTitle
+16. const gamePlayer
+17. const playerScore
+18. const gameStatus
+19. const teamScore
+20. const coachName
+21. const trainingHours
+22. const humidityLevel
+23. const temparatureValue
+24. const rainDrop
+25. const sunRise
+26. const sunSet
+27. const currentStatus
+28. const currentYear
+29. const todayDate
+30. const websiteTitle
+31. const pageNumber
+32. const queryLanguage
+33. const searchQuery
+34. const mySql
+35. const searchDatabase
+36. const searchResult
+37. const imageSource
+38. const audioSource
+39. const videoSource
+40. const audioTrack
+41. const downLoad
+42. const textBook
+43. const textEditior
+44. const commentText
+45. const imageCaption
+46. const likeCount
+47. const viewCount
+48. const shareCount
+
+
