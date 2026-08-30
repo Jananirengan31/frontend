@@ -1,0 +1,712 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals</title>
+</head>
+
+<body style="margin:0; font-family:Arial, sans-serif; background:#f4f7fb; color:#222; line-height:1.6;">
+
+    <header style="background:#132117; color:white; padding:40px 20px; text-align:center;">
+        <h1 style="margin:0; font-size:42px;">JavaScript Fundamentals</h1>
+        <p style="font-size:18px; margin:10px 0 25px;">
+            Important JavaScript Topics and For Loop Logical Problems
+        </p>
+
+        <nav style="margin-top:20px;">
+            <a href="#introduction" style="color:white; text-decoration:none; margin:0 12px; font-weight:bold;">Introduction</a>
+            <a href="#topics" style="color:white; text-decoration:none; margin:0 12px; font-weight:bold;">Topics</a>
+            <a href="#problems" style="color:white; text-decoration:none; margin:0 12px; font-weight:bold;">Problems</a>
+            <a href="#conclusion" style="color:white; text-decoration:none; margin:0 12px; font-weight:bold;">Conclusion</a>
+        </nav>
+    </header>
+
+    <main style="max-width:1000px; margin:30px auto; padding:0 20px;">
+
+        <section id="introduction" style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+            <h2 style="color:#1e3a8a; font-size:30px; margin-top:0;">Introduction</h2>
+
+            <p>
+                JavaScript is one of the most popular programming languages used
+                to create interactive and dynamic websites.
+            </p>
+
+            <p>
+                Learning JavaScript requires a strong understanding of basic
+                concepts such as variables, data types, operators, loops,
+                functions, scope, hoisting, parameters and arguments.
+            </p>
+
+            <p>
+                This article covers important JavaScript topics and logical
+                problems using the <strong>for loop</strong>.
+            </p>
+        </section>
+
+        <section id="topics">
+
+            <h2 style="font-size:32px; color:#1e3a8a; text-align:center; margin:40px 0 25px;">
+                Important JavaScript Topics
+            </h2>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">1. Variables</h3>
+
+                <p>
+                    A variable is a container used to store data in JavaScript.
+                    Variables can store numbers, strings, boolean values and
+                    other types of data.
+                </p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+let name = "Janani";
+let age = 22;
+const country = "India";
+
+console.log(name);
+console.log(age);
+console.log(country);
+                </code></pre>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">2. var</h3>
+
+                <p>
+                    <strong>var</strong> is an older keyword used to declare
+                    variables in JavaScript. It is function scoped and allows
+                    both reassignment and redeclaration.
+                </p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+var age = 20;
+
+age = 21;
+
+var age = 22;
+
+console.log(age);
+                </code></pre>
+
+                <p style="background:#eff6ff; padding:12px; border-left:4px solid #2563eb;">
+                    <strong>Output:</strong> 22
+                </p>
+
+                <ul>
+                    <li>Function scoped</li>
+                    <li>Can be reassigned</li>
+                    <li>Can be redeclared</li>
+                    <li>Hoisted with undefined</li>
+                </ul>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">3. let</h3>
+
+                <p>
+                    <strong>let</strong> was introduced in ES6. It is block
+                    scoped and can be reassigned but cannot be redeclared in
+                    the same scope.
+                </p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+let age = 20;
+
+age = 21;
+
+console.log(age);
+                </code></pre>
+
+                <p style="background:#eff6ff; padding:12px; border-left:4px solid #2563eb;">
+                    <strong>Output:</strong> 21
+                </p>
+
+                <ul>
+                    <li>Block scoped</li>
+                    <li>Can be reassigned</li>
+                    <li>Cannot be redeclared in the same scope</li>
+                    <li>Has Temporal Dead Zone</li>
+                </ul>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">4. const</h3>
+
+                <p>
+                    <strong>const</strong> is used when a variable should not
+                    be reassigned after initialization.
+                </p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+const pi = 3.14;
+
+console.log(pi);
+                </code></pre>
+
+                <p style="background:#eff6ff; padding:12px; border-left:4px solid #2563eb;">
+                    <strong>Output:</strong> 3.14
+                </p>
+
+                <ul>
+                    <li>Block scoped</li>
+                    <li>Cannot be reassigned</li>
+                    <li>Cannot be redeclared</li>
+                    <li>Must be initialized during declaration</li>
+                    <li>Has Temporal Dead Zone</li>
+                </ul>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">5. Data Types</h3>
+
+                <p>
+                    Data types define the type of value stored in a variable.
+                </p>
+
+                <h4 style="color:#374151;">Primitive Data Types</h4>
+
+                <ul>
+                    <li>String</li>
+                    <li>Number</li>
+                    <li>Boolean</li>
+                    <li>Undefined</li>
+                    <li>Null</li>
+                    <li>BigInt</li>
+                    <li>Symbol</li>
+                </ul>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+let name = "Janani";
+let age = 22;
+let student = true;
+let value;
+let result = null;
+let bigNumber = 123n;
+                </code></pre>
+
+                <h4 style="color:#374151;">Object</h4>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+let person = {
+    name: "Janani",
+    age: 22
+};
+                </code></pre>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">6. Operators</h3>
+
+                <p>
+                    Operators are symbols used to perform operations on values.
+                </p>
+
+                <h4>Arithmetic Operators</h4>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px;">
++   -   *   /   %   **
+                </pre>
+
+                <h4>Comparison Operators</h4>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px;">
+==   ===   !=   !==   >   <   >=   <=
+                </pre>
+
+                <h4>Logical Operators</h4>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px;">
+&&   ||   !
+                </pre>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">7. Loop Statements</h3>
+
+                <p>
+                    Loops are used to execute a block of code repeatedly.
+                </p>
+
+                <ul>
+                    <li>for loop</li>
+                    <li>while loop</li>
+                    <li>do...while loop</li>
+                    <li>for...of loop</li>
+                    <li>for...in loop</li>
+                </ul>
+
+                <h4>for Loop Example</h4>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+for (let i = 1; i &lt;= 5; i++) {
+    console.log(i);
+}
+                </code></pre>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">8. Functions</h3>
+
+                <p>
+                    A function is a reusable block of code designed to perform
+                    a particular task.
+                </p>
+
+                <h4>Function Declaration</h4>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add(10, 20));
+                </code></pre>
+
+                <h4>Arrow Function</h4>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+const add = (a, b) => {
+    return a + b;
+};
+                </code></pre>
+
+                <h4>Short Arrow Function</h4>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+const add = (a, b) => a + b;
+                </code></pre>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">9. Scope and Hoisting</h3>
+
+                <h4>Scope</h4>
+
+                <p>
+                    Scope determines where a variable can be accessed in a
+                    JavaScript program.
+                </p>
+
+                <ul>
+                    <li>Global Scope</li>
+                    <li>Function Scope</li>
+                    <li>Block Scope</li>
+                </ul>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+let name = "Janani";
+
+function display() {
+    let age = 22;
+
+    console.log(name);
+    console.log(age);
+}
+
+display();
+                </code></pre>
+
+                <h4>Hoisting</h4>
+
+                <p>
+                    Hoisting is JavaScript's behavior of processing
+                    declarations before executing the code.
+                </p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+console.log(age);
+
+var age = 22;
+                </code></pre>
+
+                <p style="background:#eff6ff; padding:12px; border-left:4px solid #2563eb;">
+                    <strong>Output:</strong> undefined
+                </p>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">10. Parameters and Arguments</h3>
+
+                <p>
+                    Parameters are variables defined in a function declaration.
+                    Arguments are the actual values passed to the function.
+                </p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+function multiply(a, b) {
+    return a * b;
+}
+
+console.log(multiply(5, 4));
+                </code></pre>
+
+                <p>
+                    <strong>a and b</strong> are parameters.
+                </p>
+
+                <p>
+                    <strong>5 and 4</strong> are arguments.
+                </p>
+
+                <p style="background:#eff6ff; padding:12px; border-left:4px solid #2563eb;">
+                    <strong>Output:</strong> 20
+                </p>
+            </article>
+
+        </section>
+
+        <section id="problems">
+
+            <h2 style="font-size:32px; color:#1e3a8a; text-align:center; margin:50px 0 25px;">
+                10 For Loop Logical Problems
+            </h2>
+
+            <p style="text-align:center; margin-bottom:30px;">
+                Practice these problems to improve your JavaScript logical thinking.
+            </p>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">Problem 1: Print Numbers from 1 to 20</h3>
+
+                <p>Write a program using a for loop to print numbers from 1 to 20.</p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+for (let i = 1; i &lt;= 20; i++) {
+    console.log(i);
+}
+                </code></pre>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">Problem 2: Print Even Numbers</h3>
+
+                <p>Print all even numbers from 1 to 50.</p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+for (let i = 1; i &lt;= 50; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+                </code></pre>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">Problem 3: Print Odd Numbers</h3>
+
+                <p>Print all odd numbers from 1 to 50.</p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+for (let i = 1; i &lt;= 50; i++) {
+    if (i % 2 !== 0) {
+        console.log(i);
+    }
+}
+                </code></pre>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">Problem 4: Find Sum from 1 to 100</h3>
+
+                <p>Calculate the sum of all numbers from 1 to 100.</p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+let sum = 0;
+
+for (let i = 1; i &lt;= 100; i++) {
+    sum = sum + i;
+}
+
+console.log(sum);
+                </code></pre>
+
+                <p style="background:#eff6ff; padding:12px; border-left:4px solid #2563eb;">
+                    <strong>Output:</strong> 5050
+                </p>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">Problem 5: Multiplication Table</h3>
+
+                <p>Print the multiplication table of 7 from 1 to 10.</p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+let number = 7;
+
+for (let i = 1; i &lt;= 10; i++) {
+    console.log(
+        number + " x " + i + " = " + (number * i)
+    );
+}
+                </code></pre>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">Problem 6: Count Even Numbers</h3>
+
+                <p>Count how many even numbers exist between 1 and 100.</p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+let count = 0;
+
+for (let i = 1; i &lt;= 100; i++) {
+    if (i % 2 === 0) {
+        count++;
+    }
+}
+
+console.log("Even Count:", count);
+                </code></pre>
+
+                <p style="background:#eff6ff; padding:12px; border-left:4px solid #2563eb;">
+                    <strong>Output:</strong> Even Count: 50
+                </p>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">Problem 7: Find Largest Number</h3>
+
+                <p>Find the largest number in an array using a for loop.</p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+let numbers = [10, 45, 23, 78, 12];
+
+let largest = numbers[0];
+
+for (let i = 1; i &lt; numbers.length; i++) {
+    if (numbers[i] &gt; largest) {
+        largest = numbers[i];
+    }
+}
+
+console.log("Largest:", largest);
+                </code></pre>
+
+                <p style="background:#eff6ff; padding:12px; border-left:4px solid #2563eb;">
+                    <strong>Output:</strong> Largest: 78
+                </p>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">Problem 8: Reverse a Number</h3>
+
+                <p>Reverse the number 12345 using a for loop.</p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+let number = 12345;
+let reverse = 0;
+
+for (; number &gt; 0; number = Math.floor(number / 10)) {
+    let digit = number % 10;
+    reverse = reverse * 10 + digit;
+}
+
+console.log(reverse);
+                </code></pre>
+
+                <p style="background:#eff6ff; padding:12px; border-left:4px solid #2563eb;">
+                    <strong>Output:</strong> 54321
+                </p>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">Problem 9: Check Prime Number</h3>
+
+                <p>Check whether a number is a prime number using a for loop.</p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+let number = 29;
+let isPrime = true;
+
+if (number &lt; 2) {
+    isPrime = false;
+}
+
+for (let i = 2; i &lt; number; i++) {
+    if (number % i === 0) {
+        isPrime = false;
+        break;
+    }
+}
+
+if (isPrime) {
+    console.log(number + " is a Prime Number");
+} else {
+    console.log(number + " is Not a Prime Number");
+}
+                </code></pre>
+
+                <p style="background:#eff6ff; padding:12px; border-left:4px solid #2563eb;">
+                    <strong>Output:</strong> 29 is a Prime Number
+                </p>
+            </article>
+
+            <article style="background:white; padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+                <h3 style="color:#2563eb; font-size:25px;">Problem 10: Armstrong Number</h3>
+
+                <p>Check whether a number is an Armstrong number.</p>
+
+                <p>
+                    For example:
+                    <strong>153 = 1³ + 5³ + 3³ = 153</strong>
+                </p>
+
+                <pre style="background:#111827; color:#f9fafb; padding:20px; border-radius:8px; overflow:auto;"><code>
+let number = 153;
+
+let original = number;
+
+let digits = String(number).length;
+
+let sum = 0;
+
+for (; number &gt; 0; number = Math.floor(number / 10)) {
+    let digit = number % 10;
+    sum = sum + digit ** digits;
+}
+
+if (sum === original) {
+    console.log(original + " is an Armstrong Number");
+} else {
+    console.log(original + " is Not an Armstrong Number");
+}
+                </code></pre>
+
+                <p style="background:#eff6ff; padding:12px; border-left:4px solid #2563eb;">
+                    <strong>Output:</strong> 153 is an Armstrong Number
+                </p>
+            </article>
+
+        </section>
+
+        <section style="background:white; padding:30px; margin:40px 0; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+
+            <h2 style="color:#1e3a8a; text-align:center;">Quick Revision</h2>
+
+            <table style="width:100%; border-collapse:collapse; margin-top:20px;">
+
+                <thead>
+                    <tr>
+                        <th style="border:1px solid #ddd; padding:14px; background:#1e3a8a; color:white; text-align:left;">
+                            Topic
+                        </th>
+
+                        <th style="border:1px solid #ddd; padding:14px; background:#1e3a8a; color:white; text-align:left;">
+                            Meaning
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:12px;">Variables</td>
+                        <td style="border:1px solid #ddd; padding:12px;">Used to store values</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:12px;">var</td>
+                        <td style="border:1px solid #ddd; padding:12px;">Function-scoped variable</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:12px;">let</td>
+                        <td style="border:1px solid #ddd; padding:12px;">Block-scoped variable</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:12px;">const</td>
+                        <td style="border:1px solid #ddd; padding:12px;">Block-scoped variable that cannot be reassigned</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:12px;">Data Types</td>
+                        <td style="border:1px solid #ddd; padding:12px;">Define the type of a value</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:12px;">Operators</td>
+                        <td style="border:1px solid #ddd; padding:12px;">Perform operations</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:12px;">Loops</td>
+                        <td style="border:1px solid #ddd; padding:12px;">Repeat code</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:12px;">Functions</td>
+                        <td style="border:1px solid #ddd; padding:12px;">Reusable blocks of code</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:12px;">Scope</td>
+                        <td style="border:1px solid #ddd; padding:12px;">Determines variable accessibility</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:12px;">Hoisting</td>
+                        <td style="border:1px solid #ddd; padding:12px;">Declaration processing before execution</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:12px;">Parameters</td>
+                        <td style="border:1px solid #ddd; padding:12px;">Placeholders in a function</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:12px;">Arguments</td>
+                        <td style="border:1px solid #ddd; padding:12px;">Actual values passed to a function</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section id="conclusion" style="background:white; padding:30px; margin-bottom:40px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08);">
+
+            <h2 style="color:#1e3a8a;">Conclusion</h2>
+
+            <p>
+                JavaScript becomes easier to learn when you understand its
+                fundamental concepts and practice them regularly.
+            </p>
+
+            <p>
+                The important concepts include variables, var, let, const,
+                data types, operators, loops, functions, scope, hoisting,
+                parameters and arguments.
+            </p>
+
+            <p>
+                Practicing logical problems such as prime numbers,
+                reversing numbers and Armstrong numbers helps improve
+                programming and logical thinking skills.
+            </p>
+
+            <p>
+                <strong>Don't just read the code. Write the code, run it,
+                find errors and understand the logic.</strong>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer style="background:#132117; color:white; text-align:center; padding:25px;">
+
+        <p style="margin:0;">
+            &copy; 2026 JavaScript Fundamentals | Learning JavaScript
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+```
