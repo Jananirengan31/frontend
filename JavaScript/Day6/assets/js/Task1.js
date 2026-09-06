@@ -1,3 +1,6 @@
+let Result = "";
 for (let i = 1; i <= 20; i++) {
-    console.log(i);
+    Result += i + "," ;
+    
 }
+console.log(Result);

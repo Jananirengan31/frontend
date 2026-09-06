@@ -1,4 +1,4 @@
-let n = 5;
+ /*let n = 5;
 let factorial = 1;
 
 for (let i = 1; i <= n; i++) {
@@ -30,7 +30,7 @@ let number = 5;
 let square = number * number;
 
 console.log(square);
-\
+
 let number = 4;
 
 let cube = number * number * number;
@@ -42,4 +42,35 @@ let exponent = 5;
 
 let result = base ** exponent;
 
-console.log(result);
+console.log(result); 
+
+let Even = "";
+
+for( let a=1; a<=50; a++){
+    
+        console.log(a%2==0);
+        Even += a + " "
+}
+console.log(Even) 
+
+let Rerverse = ""
+for ( let a=20; a>=1; a--){
+   Rerverse += a +" "
+    
+}
+console.log(Rerverse);*/
+
+let a = React;
+let Target =" ";
+
+for( let a = a.length -1 ; a.length< 0 ,a++){
+    console.log(a);
+    
+}
+
+
+
+
+
+
+
