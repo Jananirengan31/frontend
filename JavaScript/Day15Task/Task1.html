@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Class</title>
+    <title>DOM Toggle</title>
     <style>
-    #box {
-    width: 200px;
-    padding: 30px;
-    margin: 20px;
-    background-color: lightgray;
-    color: black;
+    #title {
+    background-color: aqua;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
     }
 
-    .active {
-    background-color: blue;
-    color: white;
+    #title.show {
+    max-height: 100px;
+    padding: 20px;
     }
     </style>
 </head>
 <body>
-    <div id="box">Hello</div>
-    <button id="btn">Add Active</button>
+    
 
-    <script src="assets/js/Task1.js"></script>
+    <P id="title">This is the paragraph that can be shown and hidden</P>
+
+    <button id="btn">Show / Hide</button>
+
+    <script src="Assets/Js/Task1.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
-const box = document.getElementById("box");
-const btn = document.getElementById("btn");
+const title = document.getElementById("title")
 
-btn.addEventListener("click", () => {
-    box.classList.add("active");
-});
+const btn = document.getElementById("btn")
+
+btn.addEventListener("click",()=>{
+    title.classList.toggle("show")
+})
