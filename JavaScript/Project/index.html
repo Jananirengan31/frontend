@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IT 2030 - An exploratory look into the future of the IT industry, the vital role of developers, the impact on Chennai and the world, and actionable solutions for working alongside AI.">
+    <title>IT 2030 | The Future of the IT Field & Developers</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Top Reading Progress Indicator -->
+    <div class="reading-progress-bar"></div>
+
+    <!-- Navigation Bar (Removed Q1, Q2, Q3 Badges) -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-container">
+                <div class="logo-badge">IT</div>
+                <div class="logo-text">IT<span>2030</span></div>
+            </a>
+
+            <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="active">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Pages/Page1.html">
+                        <span>IT in 2030</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Pages/Page2.html">
+                        <span>Without Developers</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Pages/Page3.html">
+                        <span>The Future Solution</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tech-notes">
+                        <span>Tech Thoughts</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#questions" class="nav-cta-btn">
+                        Explore Topics
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-ambient-blob blob-1"></div>
+            <div class="hero-ambient-blob blob-2"></div>
+
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <div class="pill-badge">
+                        <span class="pill-badge-dot"></span>
+                        The Future of IT & Developers • 2030 Horizon
+                    </div>
+
+                    <h1 class="hero-title">
+                        Technology will change.
+                        <br>
+                        <span class="gradient-span">IT will evolve.</span>
+                        <br>
+                        Human vision remains irreplaceable.
+                    </h1>
+
+                    <p class="hero-description">
+                        Explore how artificial intelligence, cloud computing, and automation are reshaping the software landscape. Discover why coders remain the invisible backbone of society—from Chennai’s tech corridor to global infrastructure—and how developers can thrive by working alongside AI.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#questions" class="btn btn-primary">
+                            Explore the 3 Core Questions
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#tech-notes" class="btn btn-secondary">
+                            Share Your Tech Thoughts
+                        </a>
+                    </div>
+
+                    <div class="hero-metrics">
+                        <div class="metric-item">
+                            <span class="metric-value">2030</span>
+                            <span class="metric-label">Technological Frontier</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">3 Core</span>
+                            <span class="metric-label">In-Depth Inquiries</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">100%</span>
+                            <span class="metric-label">Human Need for Problem Solvers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Floating Cards -->
+                <div class="hero-visual">
+                    <div class="glass-feature-card">
+                        <div class="feature-card-header">
+                            <div class="feature-icon-box">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+                            </div>
+                            <h3 class="feature-card-title">AI + Human Synergy</h3>
+                        </div>
+                        <p class="feature-card-desc">
+                            AI handles repetitive boilerplate code, syntax parsing, and automated tests, while engineers elevate into architects, system auditors, and creative problem solvers.
+                        </p>
+                    </div>
+
+                    <div class="glass-feature-card">
+                        <div class="feature-card-header">
+                            <div class="feature-icon-box">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                            </div>
+                            <h3 class="feature-card-title">The Invisible Backbone</h3>
+                        </div>
+                        <p class="feature-card-desc">
+                            Digital payments (UPI), hospital intensive care monitors, transit grids, and Chennai’s SaaS ecosystem quietly rely on software written and maintained by developers.
+                        </p>
+                    </div>
+
+                    <div class="glass-feature-card">
+                        <div class="feature-card-header">
+                            <div class="feature-icon-box">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+                            </div>
+                            <h3 class="feature-card-title">Lifelong Adaptability</h3>
+                        </div>
+                        <p class="feature-card-desc">
+                            The winning question is no longer "Will AI take my job?", but "How can I master AI and develop timeless human critical thinking to become 10x more valuable?"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Centerpiece Vision Quote Banner (#FFFFFF Background) -->
+        <section id="quote-banner" class="vision-quote-section">
+            <div class="vision-quote-card">
+                <span class="vision-quote-tag">Central Guiding Philosophy</span>
+                <p class="vision-quote-text">
+                    “Technology will replace some tasks and AI will change some jobs, but the need for people who can imagine, create, question and solve problems will never disappear.”
+                </p>
+                <div class="vision-quote-author">
+                    The Cornerstone Insight on the Future of Developers & IT
+                </div>
+            </div>
+        </section>
+
+        <!-- Three Core Questions Grid (With Attractive Relevant Images for Each Card) -->
+        <section id="questions" class="site-section">
+            <div class="section-header">
+                <p class="section-eyebrow">Three Questions • One Future</p>
+                <h2 class="section-title">Where is Technology Taking Us?</h2>
+                <p class="section-subtitle">
+                    Examine the three fundamental questions that define the next decade of computer science, society, and engineering careers through comprehensive professional articles.
+                </p>
+            </div>
+
+            <div class="questions-grid">
+                <!-- Question 01 Card -->
+                <a href="Pages/Page1.html" class="question-card">
+                    <div class="card-image-wrap">
+                        <img src="assets/images/card-q1.jpg" alt="Future of IT in 2030, Cloud and AI ecosystem" class="card-image">
+                        <span class="card-image-tag">Horizon 2030</span>
+                    </div>
+                    <div class="question-card-body">
+                        <div class="question-card-top">
+                            <div class="question-meta">
+                                <span class="pill-badge" style="font-size: 11px; padding: 4px 12px;">ARTICLE 01</span>
+                                <span class="question-read-time">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    5 Min Read
+                                </span>
+                            </div>
+                            <h3 class="question-title">
+                                After 3 Years, in 2030, What Will Be the Status of the IT Field?
+                            </h3>
+                            <p class="question-summary">
+                                Explore how AI, automation, cloud platforms, cybersecurity, data science, and robotics are transforming the IT profession. Understand the shift from writing boilerplate code to architecting and securing complex intelligent systems.
+                            </p>
+                        </div>
+                        <div class="question-card-bottom">
+                            <div class="question-tags">
+                                <span class="tag-pill">Emerging Tech</span>
+                                <span class="tag-pill">AI Automation</span>
+                                <span class="tag-pill">Role Evolution</span>
+                            </div>
+                            <div class="question-link">
+                                <span>Read Full Article</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Question 02 Card -->
+                <a href="Pages/Page2.html" class="question-card">
+                    <div class="card-image-wrap">
+                        <img src="assets/images/card-q2.jpg" alt="Chennai smart city, OMR tech corridor and digital infrastructure" class="card-image">
+                        <span class="card-image-tag">Infrastructure & Chennai</span>
+                    </div>
+                    <div class="question-card-body">
+                        <div class="question-card-top">
+                            <div class="question-meta">
+                                <span class="pill-badge" style="font-size: 11px; padding: 4px 12px;">ARTICLE 02</span>
+                                <span class="question-read-time">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    6 Min Read
+                                </span>
+                            </div>
+                            <h3 class="question-title">
+                                If IT Jobs Were Not Present, How Would Chennai or the World Be Without Coders?
+                            </h3>
+                            <p class="question-summary">
+                                Imagine modern life if all developers vanished. Analyze the breakdown of digital payments (UPI), healthcare monitors, cab aggregation, and e-commerce. Discover the profound impact on Chennai's OMR corridor and why even AI requires human engineers.
+                            </p>
+                        </div>
+                        <div class="question-card-bottom">
+                            <div class="question-tags">
+                                <span class="tag-pill">Digital Collapse</span>
+                                <span class="tag-pill">Chennai OMR</span>
+                                <span class="tag-pill">Invisible Code</span>
+                            </div>
+                            <div class="question-link">
+                                <span>Read Full Article</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Question 03 Card -->
+                <a href="Pages/Page3.html" class="question-card">
+                    <div class="card-image-wrap">
+                        <img src="assets/images/card-q3.jpg" alt="Human developers collaborating with AI interface" class="card-image">
+                        <span class="card-image-tag">AI Synergy & Solutions</span>
+                    </div>
+                    <div class="question-card-body">
+                        <div class="question-card-top">
+                            <div class="question-meta">
+                                <span class="pill-badge" style="font-size: 11px; padding: 4px 12px;">ARTICLE 03</span>
+                                <span class="question-read-time">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    5 Min Read
+                                </span>
+                            </div>
+                            <h3 class="question-title">
+                                What is the Solution for the Future of IT and Developers?
+                            </h3>
+                            <p class="question-summary">
+                                The answer is not to resist artificial intelligence, but to achieve synergy with it. Learn the Dual-Engine framework: future-ready tech skills (cloud, AI, security, data) combined with irreplaceable human strengths (creativity, empathy, ethics, and critical thinking).
+                            </p>
+                        </div>
+                        <div class="question-card-bottom">
+                            <div class="question-tags">
+                                <span class="tag-pill">AI Synergy</span>
+                                <span class="tag-pill">Human Strengths</span>
+                                <span class="tag-pill">Career Blueprint</span>
+                            </div>
+                            <div class="question-link">
+                                <span>Read Full Article</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 2020 vs 2030 Paradigm Shift Section -->
+        <section class="site-section paradigm-section">
+            <div class="section-header">
+                <p class="section-eyebrow">The Evolution of the Developer</p>
+                <h2 class="section-title">A Tale of Two Eras: 2020 vs 2030</h2>
+                <p class="section-subtitle">
+                    The software engineering profession is not shrinking; it is ascending to a higher level of abstraction and strategic impact.
+                </p>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="comparison-column">
+                    <div class="column-header">
+                        <h3 class="column-title">The 2020 Paradigm</h3>
+                        <span class="column-pill pill-past">Traditional Coder</span>
+                    </div>
+                    <ul class="shift-list">
+                        <li class="shift-item">
+                            <span class="shift-icon icon-past">✕</span>
+                            <div><strong>Manual Syntax Writing:</strong> Spending 60% of work hours typing repetitive boilerplate, loops, and routine API plumbing.</div>
+                        </li>
+                        <li class="shift-item">
+                            <span class="shift-icon icon-past">✕</span>
+                            <div><strong>Reactive Bug Hunting:</strong> Manually stepping through console logs and standard syntax issues line-by-line.</div>
+                        </li>
+                        <li class="shift-item">
+                            <span class="shift-icon icon-past">✕</span>
+                            <div><strong>Isolated Specialization:</strong> Knowing only one specific framework syntax without deep cross-domain system knowledge.</div>
+                        </li>
+                        <li class="shift-item">
+                            <span class="shift-icon icon-past">✕</span>
+                            <div><strong>Rote Memorization:</strong> Focusing heavily on recalling APIs and standard function arguments rather than architecture.</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="comparison-column">
+                    <div class="column-header">
+                        <h3 class="column-title">The 2030 Paradigm</h3>
+                        <span class="column-pill pill-future">Augmented Architect</span>
+                    </div>
+                    <ul class="shift-list">
+                        <li class="shift-item">
+                            <span class="shift-icon icon-future">✓</span>
+                            <div><strong>System Orchestration:</strong> Directing intelligent agents to generate initial codebases while focusing on architecture and constraints.</div>
+                        </li>
+                        <li class="shift-item">
+                            <span class="shift-icon icon-future">✓</span>
+                            <div><strong>Verification & Security Auditing:</strong> Scrutinizing AI outputs for edge cases, algorithmic bias, data privacy, and zero-trust security.</div>
+                        </li>
+                        <li class="shift-item">
+                            <span class="shift-icon icon-future">✓</span>
+                            <div><strong>Cross-Functional Innovation:</strong> Blending software, cloud, robotics, and domain knowledge (medicine, finance, logistics) into unified solutions.</div>
+                        </li>
+                        <li class="shift-item">
+                            <span class="shift-icon icon-future">✓</span>
+                            <div><strong>Human Empathy & Problem Solving:</strong> Translating real human, business, and ethical requirements into high-value technological systems.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chennai Tech Corridor Spotlight -->
+        <section id="chennai" class="site-section chennai-preview-section">
+            <div class="chennai-banner-card">
+                <div class="chennai-info">
+                    <div class="pill-badge" style="background: var(--accent-teal-soft); color: #0f766e; border-color: rgba(13,148,136,0.2);">
+                        Regional Ecosystem Spotlight
+                    </div>
+                    <h3>Chennai: The SaaS & IT Powerhouse</h3>
+                    <p>
+                        From the buzzing glass towers of Old Mahabalipuram Road (OMR) and Tidel Park to the sprawling tech campuses of Siruseri and Porur, Chennai represents the beating heart of India's enterprise software revolution. Coders here don't just build apps; they power global banking operations, world-class SaaS unicorns like Zoho and Freshworks, and vital local commerce.
+                    </p>
+                    <a href="Pages/Page2.html" class="btn btn-primary" style="background: linear-gradient(135deg, #0d9488 0%, #0284c7 100%);">
+                        Read Chennai’s Impact in Detail
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <div class="chennai-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">#1</div>
+                        <div class="stat-desc">SaaS Capital of India (Zoho, Freshworks, Chargebee)</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">45+ KM</div>
+                        <div class="stat-desc">OMR Technology Corridor connecting global IT majors</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">10M+</div>
+                        <div class="stat-desc">Daily UPI & Digital Transactions dependent on code</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">Global Hub</div>
+                        <div class="stat-desc">Fintech & Tech backbones for World Bank & top banks</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW INTERACTIVE FEATURE: User Technology Thoughts & Notes Wall -->
+        <section id="tech-notes" class="user-notes-section">
+            <div class="notes-container">
+                <div class="section-header">
+                    <p class="section-eyebrow">Interactive Community & Student Forum</p>
+                    <h2 class="section-title">Share Your Technology Thoughts & 2030 Vision</h2>
+                    <p class="section-subtitle">
+                        What are your personal reflections on artificial intelligence, coding careers, and Chennai's tech future? Leave your note below and explore perspectives from students, engineers, and educators.
+                    </p>
+                </div>
+
+                <!-- Input Note Card -->
+                <div class="notes-input-card">
+                    <h3>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="color: var(--primary-sky);"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                        Add Your Technology Reflection or Advice
+                    </h3>
+                    <p>Your note will be added to the live interactive wall below and saved locally for your session presentation.</p>
+
+                    <form id="techNotesForm" class="notes-form">
+                        <div class="notes-form-row">
+                            <div class="form-group">
+                                <label for="noteAuthor">Your Name / Title *</label>
+                                <input type="text" id="noteAuthor" class="form-input" placeholder="e.g., Karthik R." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="noteRole">Your Role / College / City</label>
+                                <input type="text" id="noteRole" class="form-input" placeholder="e.g., Final Year CSE, Chennai" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="noteCategory">Topic Focus</label>
+                            <select id="noteCategory" class="form-select">
+                                <option value="ai-evolution">AI & Future of Coding</option>
+                                <option value="chennai-tech">Chennai Tech & Infrastructure</option>
+                                <option value="future-skills">Essential Future Skills</option>
+                                <option value="student-advice">Advice for Tech Students</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="noteContent">Your Thought / Note *</label>
+                            <textarea id="noteContent" class="form-textarea" placeholder="Share your perspective on the future of developers, what makes human coders irreplaceable, or your vision for 2030..." required></textarea>
+
+                            <!-- Starter Prompt Chips -->
+                            <div class="starter-prompts">
+                                <span class="starter-label">Need inspiration? Click a thought-starter:</span>
+                                <button type="button" class="starter-chip" data-prompt="In 2030, developers won't just write code; they will be the system architects deciding what code should be built and why.">
+                                    💡 2030 Architect Role
+                                </button>
+                                <button type="button" class="starter-chip" data-prompt="Human empathy, ethical judgment, and creative problem solving are three superpowers AI can never automate.">
+                                    🌟 Irreplaceable Superpowers
+                                </button>
+                                <button type="button" class="starter-chip" data-prompt="Chennai's OMR is proof that software is an entire economic engine. Coders keep the heartbeat of modern India alive.">
+                                    🏙️ Chennai OMR Pulse
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="notes-submit-row">
+                            <span style="font-size: 13px; color: var(--text-muted);">
+                                ✦ Stored locally • Shareable in presentations
+                            </span>
+                            <button type="submit" class="btn btn-primary" style="padding: 12px 28px;">
+                                Post My Technology Thought
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Notes Filter Bar -->
+                <div class="notes-filter-bar">
+                    <div class="notes-filter-tabs">
+                        <button class="filter-tab active" data-category="all">All Thoughts</button>
+                        <button class="filter-tab" data-category="ai-evolution">AI & Coding</button>
+                        <button class="filter-tab" data-category="chennai-tech">Chennai Tech</button>
+                        <button class="filter-tab" data-category="future-skills">Future Skills</button>
+                        <button class="filter-tab" data-category="student-advice">Student Advice</button>
+                    </div>
+                    <div style="font-size: 13px; font-weight: 600; color: var(--text-muted);">
+                        React or click "Copy" to cite thoughts in your presentation
+                    </div>
+                </div>
+
+                <!-- Live Dynamic Notes Grid -->
+                <div id="notesGrid" class="notes-grid">
+                    <!-- Populated dynamically by script.js -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-container">
+                    <div class="logo-badge">IT</div>
+                    <div class="logo-text">IT<span>2030</span></div>
+                </a>
+                <p>
+                    A comprehensive college presentation and research website analyzing the evolution of software engineering, artificial intelligence, and the timeless importance of human creativity.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Core Articles</h4>
+                <ul class="footer-links">
+                    <li><a href="Pages/Page1.html">IT Landscape in 2030</a></li>
+                    <li><a href="Pages/Page2.html">World & Chennai Without Coders</a></li>
+                    <li><a href="Pages/Page3.html">Future Solutions & Roadmap</a></li>
+                    <li><a href="#tech-notes">Community Tech Thoughts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Key Concepts</h4>
+                <ul class="footer-links">
+                    <li><a href="Pages/Page1.html#pillars">6 Technology Pillars</a></li>
+                    <li><a href="Pages/Page2.html#chennai-ecosystem">Chennai's Tech Ecosystem</a></li>
+                    <li><a href="Pages/Page3.html#human-skills">Irreplaceable Human Skills</a></li>
+                    <li><a href="Pages/Page3.html#ai-synergy">Human-AI Collaboration</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-credits">
+                IT 2030 • College Presentation & Project Showcase
+            </div>
+            <div>
+                “Technology will replace tasks, but problem solvers will endure.”
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" aria-label="Scroll back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
