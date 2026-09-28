@@ -1,270 +1,1226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AI Insights</title>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         .card {
-            transition: 0.3s;
+            transition: all 0.3s ease;
         }
 
         .card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-6px);
         }
+
     </style>
+
 </head>
 
-<body class="bg-gray-50 text-gray-800">
 
-    <nav class="bg-white border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+<body class="bg-slate-950 text-white">
+
+
+    <!-- ================================================= -->
+    <!-- NAVBAR -->
+    <!-- ================================================= -->
+
+    <nav
+        class="bg-gradient-to-r from-slate-950 via-indigo-900 to-purple-900 border-b border-indigo-700">
+
+        <div
+            class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+
+            <!-- Logo -->
 
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">AI</div>
-                <h1 class="text-xl font-bold text-gray-900">AI<span class="text-blue-600">Insights</span></h1>
+
+                <div
+                    class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center font-bold shadow-lg">
+
+                    AI
+
+                </div>
+
+
+                <h1 class="text-xl font-bold">
+
+                    AI<span class="text-blue-300">
+                        Insights
+                    </span>
+
+                </h1>
+
             </div>
 
-            <div class="flex items-center gap-8">
-                <a href="#" class="text-blue-600 font-semibold">Home</a>
-                <a href="#articles" class="text-gray-600 hover:text-blue-600">Articles</a>
-                <a href="#categories" class="text-gray-600 hover:text-blue-600">Categories</a>
-                <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
-                <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">Subscribe</button>
+
+            <!-- Navigation -->
+
+            <div class="hidden md:flex items-center gap-8">
+
+                <a
+                    href="#"
+                    class="text-white font-semibold hover:text-blue-300">
+
+                    Home
+
+                </a>
+
+
+                <a
+                    href="#articles"
+                    class="text-indigo-200 hover:text-white">
+
+                    Articles
+
+                </a>
+
+
+                <a
+                    href="#categories"
+                    class="text-indigo-200 hover:text-white">
+
+                    Categories
+
+                </a>
+
+
+                <a
+                    href="#about"
+                    class="text-indigo-200 hover:text-white">
+
+                    About
+
+                </a>
+
+
+                <a
+                    href="#newsletter"
+                    class="bg-gradient-to-r from-blue-500 to-purple-600
+                    px-5 py-2 rounded-lg font-semibold
+                    hover:from-blue-600 hover:to-purple-700">
+
+                    Subscribe
+
+                </a>
+
             </div>
 
         </div>
+
     </nav>
 
 
-    <section class="bg-blue-50">
-        <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center justify-between gap-12">
+
+    <!-- ================================================= -->
+    <!-- HERO -->
+    <!-- ================================================= -->
+
+    <section
+        class="bg-gradient-to-r from-slate-950 via-indigo-900 to-purple-900">
+
+        <div
+            class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row
+            items-center justify-between gap-12">
+
+
+            <!-- Hero Content -->
 
             <div class="md:w-1/2">
-                <p class="text-blue-600 font-semibold mb-4">ARTIFICIAL INTELLIGENCE</p>
 
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">Discover the Future of <span class="text-blue-600">Artificial Intelligence</span></h2>
+                <p
+                    class="text-blue-400 font-semibold text-sm tracking-widest mb-4">
 
-                <p class="text-gray-600 mt-5 text-lg leading-relaxed">Explore the latest AI technologies, trends and ideas that are transforming businesses and everyday life.</p>
+                    ARTIFICIAL INTELLIGENCE
 
-                <div class="flex gap-4 mt-7">
-                    <a href="#articles" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Explore Articles</a>
-                    <a href="#categories" class="border border-gray-300 bg-white px-6 py-3 rounded-lg hover:bg-gray-100">Explore Topics</a>
+                </p>
+
+
+                <h2
+                    class="text-4xl md:text-6xl font-bold leading-tight">
+
+                    Discover the Future of
+
+                    <span
+                        class="bg-gradient-to-r from-blue-400 via-indigo-300
+                        to-purple-400 bg-clip-text text-transparent">
+
+                        Artificial Intelligence
+
+                    </span>
+
+                </h2>
+
+
+                <p
+                    class="text-indigo-200 mt-6 text-lg leading-relaxed">
+
+                    Explore the latest AI technologies, trends and ideas
+                    that are transforming businesses and everyday life.
+
+                </p>
+
+
+                <div class="flex flex-wrap gap-4 mt-8">
+
+                    <a
+                        href="#articles"
+                        class="bg-gradient-to-r from-blue-600 to-purple-600
+                        px-6 py-3 rounded-lg font-semibold shadow-lg
+                        hover:from-blue-500 hover:to-purple-500">
+
+                        Explore Articles
+
+                    </a>
+
+
+                    <a
+                        href="#categories"
+                        class="border border-indigo-400 px-6 py-3
+                        rounded-lg text-indigo-100 hover:bg-indigo-800">
+
+                        Explore Topics
+
+                    </a>
+
                 </div>
+
             </div>
 
+
+
+            <!-- Hero Illustration -->
 
             <div class="md:w-1/2 flex justify-center">
-                <div class="w-72 h-72 rounded-full bg-white shadow-lg flex items-center justify-center">
-                    <div class="w-52 h-52 rounded-full bg-blue-100 flex items-center justify-center">
-                        <span class="text-7xl">🤖</span>
+
+                <div
+                    class="w-72 h-72 rounded-full
+                    bg-gradient-to-br from-blue-500/30 via-indigo-600/30
+                    to-purple-600/30 border border-indigo-400/40
+                    flex items-center justify-center shadow-2xl">
+
+                    <div
+                        class="w-56 h-56 rounded-full
+                        bg-gradient-to-br from-blue-600 via-indigo-700
+                        to-purple-700 flex items-center justify-center">
+
+                        <div
+                            class="w-40 h-40 rounded-full bg-slate-950/70
+                            flex items-center justify-center
+                            border border-blue-400/30">
+
+                            <span class="text-6xl">
+                                AI
+                            </span>
+
+                        </div>
+
                     </div>
+
                 </div>
+
             </div>
 
         </div>
-    </section>
-
-
-    <section id="categories" class="max-w-7xl mx-auto px-6 py-12">
-
-        <div class="text-center mb-8">
-            <p class="text-blue-600 font-semibold text-sm">EXPLORE</p>
-            <h2 class="text-3xl font-bold text-gray-900 mt-2">AI Categories</h2>
-        </div>
-
-        <div class="flex flex-wrap justify-center gap-3">
-            <button class="bg-blue-600 text-white px-5 py-2 rounded-full">All</button>
-            <button class="bg-white border border-gray-200 px-5 py-2 rounded-full hover:border-blue-500 hover:text-blue-600">Machine Learning</button>
-            <button class="bg-white border border-gray-200 px-5 py-2 rounded-full hover:border-blue-500 hover:text-blue-600">Generative AI</button>
-            <button class="bg-white border border-gray-200 px-5 py-2 rounded-full hover:border-blue-500 hover:text-blue-600">Robotics</button>
-            <button class="bg-white border border-gray-200 px-5 py-2 rounded-full hover:border-blue-500 hover:text-blue-600">Data Science</button>
-            <button class="bg-white border border-gray-200 px-5 py-2 rounded-full hover:border-blue-500 hover:text-blue-600">Future Tech</button>
-        </div>
 
     </section>
 
 
-    <section id="articles" class="max-w-7xl mx-auto px-6 py-12">
 
-        <div class="flex items-end justify-between mb-8">
+    <!-- ================================================= -->
+    <!-- CATEGORIES -->
+    <!-- ================================================= -->
+
+    <section
+        id="categories"
+        class="bg-slate-950 py-14">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+
+            <div class="text-center mb-8">
+
+                <p
+                    class="text-blue-400 font-semibold text-sm tracking-widest">
+
+                    EXPLORE
+
+                </p>
+
+
+                <h2 class="text-3xl font-bold mt-2">
+
+                    AI Categories
+
+                </h2>
+
+
+                <p class="text-slate-400 mt-3">
+
+                    Explore different areas of Artificial Intelligence.
+
+                </p>
+
+            </div>
+
+
+            <div
+                class="flex flex-wrap justify-center gap-3">
+
+
+                <button
+                    class="bg-gradient-to-r from-blue-600 to-purple-600
+                    px-6 py-2 rounded-full font-semibold">
+
+                    All
+
+                </button>
+
+
+                <button
+                    class="bg-slate-900 border border-indigo-700
+                    px-6 py-2 rounded-full text-indigo-200
+                    hover:bg-indigo-900">
+
+                    Machine Learning
+
+                </button>
+
+
+                <button
+                    class="bg-slate-900 border border-indigo-700
+                    px-6 py-2 rounded-full text-indigo-200
+                    hover:bg-indigo-900">
+
+                    Generative AI
+
+                </button>
+
+
+                <button
+                    class="bg-slate-900 border border-indigo-700
+                    px-6 py-2 rounded-full text-indigo-200
+                    hover:bg-indigo-900">
+
+                    Robotics
+
+                </button>
+
+
+                <button
+                    class="bg-slate-900 border border-indigo-700
+                    px-6 py-2 rounded-full text-indigo-200
+                    hover:bg-indigo-900">
+
+                    Data Science
+
+                </button>
+
+
+                <button
+                    class="bg-slate-900 border border-indigo-700
+                    px-6 py-2 rounded-full text-indigo-200
+                    hover:bg-indigo-900">
+
+                    Future Tech
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- ARTICLES -->
+    <!-- ================================================= -->
+
+    <section
+        id="articles"
+        class="bg-gradient-to-b from-slate-950 via-indigo-950/40
+        to-slate-950 py-16">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+
+            <!-- Heading -->
+
+            <div
+                class="flex flex-col md:flex-row md:items-end
+                md:justify-between gap-4 mb-10">
+
+                <div>
+
+                    <p
+                        class="text-blue-400 font-semibold text-sm tracking-widest">
+
+                        FEATURED
+
+                    </p>
+
+
+                    <h2 class="text-3xl font-bold mt-2">
+
+                        Latest AI Articles
+
+                    </h2>
+
+                </div>
+
+
+                <a
+                    href="#"
+                    class="text-blue-400 font-semibold
+                    hover:text-purple-400">
+
+                    View All →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- Cards -->
+
+            <div class="flex flex-wrap gap-8">
+
+
+                <!-- ================================================= -->
+                <!-- CARD 1 -->
+                <!-- ================================================= -->
+
+                <article
+                    class="card w-full md:w-[calc(50%-16px)]
+                    lg:w-[calc(33.333%-22px)]
+                    bg-gradient-to-br from-slate-900 to-indigo-950
+                    border border-indigo-800 rounded-xl overflow-hidden
+                    shadow-xl">
+
+
+                    <!-- Image -->
+
+                    <div class="h-52 relative overflow-hidden">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=900&q=80"
+                            alt="Machine learning and computer technology"
+                            class="w-full h-full object-cover">
+
+                        <div
+                            class="absolute inset-0
+                            bg-gradient-to-t from-slate-950/90
+                            via-slate-900/20 to-transparent">
+                        </div>
+
+
+                        <div class="absolute bottom-4 left-5">
+
+                            <span
+                                class="text-xs bg-slate-950/80
+                                border border-slate-700 px-3 py-1
+                                rounded text-slate-200">
+
+                                MACHINE LEARNING
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Content -->
+
+                    <div class="p-6">
+
+                        <p
+                            class="text-blue-400 text-sm font-semibold">
+
+                            MACHINE LEARNING
+
+                        </p>
+
+
+                        <h3
+                            class="text-xl font-bold mt-3">
+
+                            How Machine Learning Is Changing Our World
+
+                        </h3>
+
+
+                        <p
+                            class="text-slate-300 text-sm mt-3
+                            leading-relaxed">
+
+                            Discover how machine learning is transforming
+                            healthcare, finance, education and technology.
+
+                        </p>
+
+
+                        <div
+                            class="flex items-center justify-between mt-6">
+
+                            <span
+                                class="text-slate-500 text-sm">
+
+                                8 min read
+
+                            </span>
+
+
+                            <a
+                                href="#"
+                                class="text-blue-400 font-semibold
+                                text-sm hover:text-purple-400">
+
+                                Read More →
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================================================= -->
+                <!-- CARD 2 -->
+                <!-- ================================================= -->
+
+                <article
+                    class="card w-full md:w-[calc(50%-16px)]
+                    lg:w-[calc(33.333%-22px)]
+                    bg-gradient-to-br from-slate-900 to-purple-950
+                    border border-purple-800 rounded-xl overflow-hidden
+                    shadow-xl">
+
+
+                    <!-- Image -->
+
+                    <div class="h-52 relative overflow-hidden">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80"
+                            alt="Generative artificial intelligence"
+                            class="w-full h-full object-cover">
+
+                        <div
+                            class="absolute inset-0
+                            bg-gradient-to-t from-slate-950/90
+                            via-slate-900/20 to-transparent">
+                        </div>
+
+
+                        <div class="absolute bottom-4 left-5">
+
+                            <span
+                                class="text-xs bg-slate-950/80
+                                border border-slate-700 px-3 py-1
+                                rounded text-slate-200">
+
+                                GENERATIVE AI
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Content -->
+
+                    <div class="p-6">
+
+                        <p
+                            class="text-purple-400 text-sm font-semibold">
+
+                            GENERATIVE AI
+
+                        </p>
+
+
+                        <h3
+                            class="text-xl font-bold mt-3">
+
+                            The Rise of Generative Artificial Intelligence
+
+                        </h3>
+
+
+                        <p
+                            class="text-slate-300 text-sm mt-3
+                            leading-relaxed">
+
+                            Learn how generative AI can create text,
+                            images, code, music and digital content.
+
+                        </p>
+
+
+                        <div
+                            class="flex items-center justify-between mt-6">
+
+                            <span
+                                class="text-slate-500 text-sm">
+
+                                6 min read
+
+                            </span>
+
+
+                            <a
+                                href="#"
+                                class="text-purple-400 font-semibold
+                                text-sm hover:text-blue-400">
+
+                                Read More →
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================================================= -->
+                <!-- CARD 3 -->
+                <!-- ================================================= -->
+
+                <article
+                    class="card w-full md:w-[calc(50%-16px)]
+                    lg:w-[calc(33.333%-22px)]
+                    bg-gradient-to-br from-slate-900 to-blue-950
+                    border border-blue-800 rounded-xl overflow-hidden
+                    shadow-xl">
+
+
+                    <!-- Image -->
+
+                    <div class="h-52 relative overflow-hidden">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80"
+                            alt="Modern robotics technology"
+                            class="w-full h-full object-cover">
+
+                        <div
+                            class="absolute inset-0
+                            bg-gradient-to-t from-slate-950/90
+                            via-slate-900/20 to-transparent">
+                        </div>
+
+
+                        <div class="absolute bottom-4 left-5">
+
+                            <span
+                                class="text-xs bg-slate-950/80
+                                border border-slate-700 px-3 py-1
+                                rounded text-slate-200">
+
+                                ROBOTICS
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Content -->
+
+                    <div class="p-6">
+
+                        <p
+                            class="text-cyan-400 text-sm font-semibold">
+
+                            ROBOTICS
+
+                        </p>
+
+
+                        <h3
+                            class="text-xl font-bold mt-3">
+
+                            How AI Is Powering Modern Robotics
+
+                        </h3>
+
+
+                        <p
+                            class="text-slate-300 text-sm mt-3
+                            leading-relaxed">
+
+                            Explore how artificial intelligence enables
+                            robots to perform complex tasks.
+
+                        </p>
+
+
+                        <div
+                            class="flex items-center justify-between mt-6">
+
+                            <span
+                                class="text-slate-500 text-sm">
+
+                                7 min read
+
+                            </span>
+
+
+                            <a
+                                href="#"
+                                class="text-cyan-400 font-semibold
+                                text-sm hover:text-blue-400">
+
+                                Read More →
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================================================= -->
+                <!-- CARD 4 -->
+                <!-- ================================================= -->
+
+                <article
+                    class="card w-full md:w-[calc(50%-16px)]
+                    lg:w-[calc(33.333%-22px)]
+                    bg-gradient-to-br from-slate-900 to-indigo-950
+                    border border-indigo-800 rounded-xl overflow-hidden
+                    shadow-xl">
+
+
+                    <!-- Image -->
+
+                    <div class="h-52 relative overflow-hidden">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+                            alt="Data analytics dashboard"
+                            class="w-full h-full object-cover">
+
+                        <div
+                            class="absolute inset-0
+                            bg-gradient-to-t from-slate-950/90
+                            via-slate-900/20 to-transparent">
+                        </div>
+
+
+                        <div class="absolute bottom-4 left-5">
+
+                            <span
+                                class="text-xs bg-slate-950/80
+                                border border-slate-700 px-3 py-1
+                                rounded text-slate-200">
+
+                                DATA SCIENCE
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Content -->
+
+                    <div class="p-6">
+
+                        <p
+                            class="text-indigo-400 text-sm font-semibold">
+
+                            DATA SCIENCE
+
+                        </p>
+
+
+                        <h3
+                            class="text-xl font-bold mt-3">
+
+                            AI and the Future of Data Science
+
+                        </h3>
+
+
+                        <p
+                            class="text-slate-300 text-sm mt-3
+                            leading-relaxed">
+
+                            Understand how AI-powered analytics help
+                            businesses make smarter decisions.
+
+                        </p>
+
+
+                        <div
+                            class="flex items-center justify-between mt-6">
+
+                            <span
+                                class="text-slate-500 text-sm">
+
+                                5 min read
+
+                            </span>
+
+
+                            <a
+                                href="#"
+                                class="text-indigo-400 font-semibold
+                                text-sm hover:text-purple-400">
+
+                                Read More →
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================================================= -->
+                <!-- CARD 5 -->
+                <!-- ================================================= -->
+
+                <article
+                    class="card w-full md:w-[calc(50%-16px)]
+                    lg:w-[calc(33.333%-22px)]
+                    bg-gradient-to-br from-slate-900 to-indigo-950
+                    border border-blue-800 rounded-xl overflow-hidden
+                    shadow-xl">
+
+
+                    <!-- Image -->
+
+                    <div class="h-52 relative overflow-hidden">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=80"
+                            alt="Cybersecurity technology"
+                            class="w-full h-full object-cover">
+
+                        <div
+                            class="absolute inset-0
+                            bg-gradient-to-t from-slate-950/90
+                            via-slate-900/20 to-transparent">
+                        </div>
+
+
+                        <div class="absolute bottom-4 left-5">
+
+                            <span
+                                class="text-xs bg-slate-950/80
+                                border border-slate-700 px-3 py-1
+                                rounded text-slate-200">
+
+                                AI SECURITY
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Content -->
+
+                    <div class="p-6">
+
+                        <p
+                            class="text-blue-400 text-sm font-semibold">
+
+                            AI SECURITY
+
+                        </p>
+
+
+                        <h3
+                            class="text-xl font-bold mt-3">
+
+                            Artificial Intelligence and Cybersecurity
+
+                        </h3>
+
+
+                        <p
+                            class="text-slate-300 text-sm mt-3
+                            leading-relaxed">
+
+                            Discover how AI can help detect threats
+                            and improve digital security.
+
+                        </p>
+
+
+                        <div
+                            class="flex items-center justify-between mt-6">
+
+                            <span
+                                class="text-slate-500 text-sm">
+
+                                9 min read
+
+                            </span>
+
+
+                            <a
+                                href="#"
+                                class="text-blue-400 font-semibold
+                                text-sm hover:text-purple-400">
+
+                                Read More →
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================================================= -->
+                <!-- CARD 6 -->
+                <!-- ================================================= -->
+
+                <article
+                    class="card w-full md:w-[calc(50%-16px)]
+                    lg:w-[calc(33.333%-22px)]
+                    bg-gradient-to-br from-slate-900 to-purple-950
+                    border border-purple-800 rounded-xl overflow-hidden
+                    shadow-xl">
+
+
+                    <!-- Image -->
+
+                    <div class="h-52 relative overflow-hidden">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+                            alt="Future technology and computer hardware"
+                            class="w-full h-full object-cover">
+
+                        <div
+                            class="absolute inset-0
+                            bg-gradient-to-t from-slate-950/90
+                            via-slate-900/20 to-transparent">
+                        </div>
+
+
+                        <div class="absolute bottom-4 left-5">
+
+                            <span
+                                class="text-xs bg-slate-950/80
+                                border border-slate-700 px-3 py-1
+                                rounded text-slate-200">
+
+                                FUTURE TECH
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Content -->
+
+                    <div class="p-6">
+
+                        <p
+                            class="text-purple-400 text-sm font-semibold">
+
+                            FUTURE TECH
+
+                        </p>
+
+
+                        <h3
+                            class="text-xl font-bold mt-3">
+
+                            What Will AI Look Like in the Future?
+
+                        </h3>
+
+
+                        <p
+                            class="text-slate-300 text-sm mt-3
+                            leading-relaxed">
+
+                            Explore emerging AI technologies and how
+                            they could reshape our everyday lives.
+
+                        </p>
+
+
+                        <div
+                            class="flex items-center justify-between mt-6">
+
+                            <span
+                                class="text-slate-500 text-sm">
+
+                                10 min read
+
+                            </span>
+
+
+                            <a
+                                href="#"
+                                class="text-purple-400 font-semibold
+                                text-sm hover:text-blue-400">
+
+                                Read More →
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- NEWSLETTER -->
+    <!-- ================================================= -->
+
+    <section
+        id="newsletter"
+        class="py-16 bg-slate-950">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div
+                class="bg-gradient-to-r from-slate-950 via-indigo-900
+                to-purple-900 border border-indigo-700 rounded-2xl
+                p-10 text-center shadow-2xl">
+
+
+                <p
+                    class="text-blue-400 font-semibold text-sm tracking-widest">
+
+                    STAY CONNECTED
+
+                </p>
+
+
+                <h2
+                    class="text-3xl md:text-4xl font-bold mt-3">
+
+                    Stay Updated With AI
+
+                </h2>
+
+
+                <p class="text-indigo-200 mt-4">
+
+                    Get the latest AI articles and technology insights.
+
+                </p>
+
+
+                <div
+                    class="flex flex-col sm:flex-row gap-3
+                    max-w-lg mx-auto mt-7">
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        class="flex-1 px-5 py-3 rounded-lg
+                        bg-slate-900 border border-indigo-700
+                        text-white placeholder-slate-500 outline-none
+                        focus:border-blue-500">
+
+
+                    <button
+                        class="bg-gradient-to-r from-blue-600
+                        to-purple-600 px-6 py-3 rounded-lg
+                        font-semibold hover:from-blue-500
+                        hover:to-purple-500">
+
+                        Subscribe
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- FOOTER -->
+    <!-- ================================================= -->
+
+    <footer
+        id="about"
+        class="bg-gradient-to-r from-slate-950 via-indigo-900
+        to-purple-900 border-t border-indigo-700">
+
+
+        <div
+            class="max-w-7xl mx-auto px-6 py-12 flex flex-col
+            md:flex-row justify-between gap-10">
+
+
+            <!-- Logo -->
 
             <div>
-                <p class="text-blue-600 font-semibold text-sm">FEATURED</p>
-                <h2 class="text-3xl font-bold text-gray-900 mt-2">Latest AI Articles</h2>
+
+                <div class="flex items-center gap-3">
+
+                    <div
+                        class="w-10 h-10 rounded-lg
+                        bg-gradient-to-br from-blue-500
+                        to-purple-600 flex items-center
+                        justify-center font-bold">
+
+                        AI
+
+                    </div>
+
+
+                    <h2 class="text-xl font-bold">
+
+                        AI<span class="text-blue-300">
+                            Insights
+                        </span>
+
+                    </h2>
+
+                </div>
+
+
+                <p
+                    class="text-indigo-200 text-sm mt-4
+                    max-w-sm leading-relaxed">
+
+                    Exploring Artificial Intelligence,
+                    emerging technologies and the future
+                    of innovation.
+
+                </p>
+
             </div>
 
-            <a href="#" class="text-blue-600 font-semibold">View All →</a>
-
-        </div>
 
 
-        <div class="flex flex-wrap gap-8">
-
-
-            <article class="card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)]">
-
-                <div class="h-48 bg-blue-100 flex items-center justify-center">
-                    <span class="text-7xl">🧠</span>
-                </div>
-
-                <div class="p-6">
-                    <p class="text-blue-600 text-sm font-semibold">MACHINE LEARNING</p>
-                    <h3 class="text-xl font-bold text-gray-900 mt-3">How Machine Learning Is Changing Our World</h3>
-                    <p class="text-gray-600 text-sm mt-3 leading-relaxed">Discover how machine learning is transforming healthcare, finance, education and technology.</p>
-
-                    <div class="flex items-center justify-between mt-6">
-                        <span class="text-gray-400 text-sm">8 min read</span>
-                        <a href="#" class="text-blue-600 font-semibold text-sm">Read More →</a>
-                    </div>
-                </div>
-
-            </article>
-
-
-            <article class="card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)]">
-
-                <div class="h-48 bg-purple-100 flex items-center justify-center">
-                    <span class="text-7xl">✨</span>
-                </div>
-
-                <div class="p-6">
-                    <p class="text-purple-600 text-sm font-semibold">GENERATIVE AI</p>
-                    <h3 class="text-xl font-bold text-gray-900 mt-3">The Rise of Generative Artificial Intelligence</h3>
-                    <p class="text-gray-600 text-sm mt-3 leading-relaxed">Learn how generative AI can create text, images, code, music and digital content.</p>
-
-                    <div class="flex items-center justify-between mt-6">
-                        <span class="text-gray-400 text-sm">6 min read</span>
-                        <a href="#" class="text-blue-600 font-semibold text-sm">Read More →</a>
-                    </div>
-                </div>
-
-            </article>
-
-
-            <article class="card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)]">
-
-                <div class="h-48 bg-cyan-100 flex items-center justify-center">
-                    <span class="text-7xl">🤖</span>
-                </div>
-
-                <div class="p-6">
-                    <p class="text-cyan-600 text-sm font-semibold">ROBOTICS</p>
-                    <h3 class="text-xl font-bold text-gray-900 mt-3">How AI Is Powering Modern Robotics</h3>
-                    <p class="text-gray-600 text-sm mt-3 leading-relaxed">Explore how artificial intelligence enables robots to perform complex tasks.</p>
-
-                    <div class="flex items-center justify-between mt-6">
-                        <span class="text-gray-400 text-sm">7 min read</span>
-                        <a href="#" class="text-blue-600 font-semibold text-sm">Read More →</a>
-                    </div>
-                </div>
-
-            </article>
-
-
-            <article class="card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)]">
-
-                <div class="h-48 bg-green-100 flex items-center justify-center">
-                    <span class="text-7xl">📊</span>
-                </div>
-
-                <div class="p-6">
-                    <p class="text-green-600 text-sm font-semibold">DATA SCIENCE</p>
-                    <h3 class="text-xl font-bold text-gray-900 mt-3">AI and the Future of Data Science</h3>
-                    <p class="text-gray-600 text-sm mt-3 leading-relaxed">Understand how AI-powered analytics help businesses make smarter decisions.</p>
-
-                    <div class="flex items-center justify-between mt-6">
-                        <span class="text-gray-400 text-sm">5 min read</span>
-                        <a href="#" class="text-blue-600 font-semibold text-sm">Read More →</a>
-                    </div>
-                </div>
-
-            </article>
-
-
-            <article class="card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)]">
-
-                <div class="h-48 bg-orange-100 flex items-center justify-center">
-                    <span class="text-7xl">🔐</span>
-                </div>
-
-                <div class="p-6">
-                    <p class="text-orange-600 text-sm font-semibold">AI SECURITY</p>
-                    <h3 class="text-xl font-bold text-gray-900 mt-3">Artificial Intelligence and Cybersecurity</h3>
-                    <p class="text-gray-600 text-sm mt-3 leading-relaxed">Discover how AI can help detect threats and improve digital security.</p>
-
-                    <div class="flex items-center justify-between mt-6">
-                        <span class="text-gray-400 text-sm">9 min read</span>
-                        <a href="#" class="text-blue-600 font-semibold text-sm">Read More →</a>
-                    </div>
-                </div>
-
-            </article>
-
-
-            <article class="card bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)]">
-
-                <div class="h-48 bg-pink-100 flex items-center justify-center">
-                    <span class="text-7xl">🚀</span>
-                </div>
-
-                <div class="p-6">
-                    <p class="text-pink-600 text-sm font-semibold">FUTURE TECH</p>
-                    <h3 class="text-xl font-bold text-gray-900 mt-3">What Will AI Look Like in the Future?</h3>
-                    <p class="text-gray-600 text-sm mt-3 leading-relaxed">Explore emerging AI technologies and how they could reshape our everyday lives.</p>
-
-                    <div class="flex items-center justify-between mt-6">
-                        <span class="text-gray-400 text-sm">10 min read</span>
-                        <a href="#" class="text-blue-600 font-semibold text-sm">Read More →</a>
-                    </div>
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <section class="max-w-7xl mx-auto px-6 py-16">
-
-        <div class="bg-blue-600 rounded-2xl p-10 text-center text-white">
-
-            <h2 class="text-3xl font-bold">Stay Updated With AI</h2>
-            <p class="mt-3 text-blue-100">Get the latest AI articles and technology insights.</p>
-
-            <div class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto mt-6">
-                <input type="email" placeholder="Enter your email" class="flex-1 px-5 py-3 rounded-lg text-gray-900 outline-none">
-                <button class="bg-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-800">Subscribe</button>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <footer id="about" class="bg-white border-t border-gray-200">
-
-        <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between gap-8">
+            <!-- Links -->
 
             <div>
-                <h2 class="text-xl font-bold text-gray-900">AI<span class="text-blue-600">Insights</span></h2>
-                <p class="text-gray-500 text-sm mt-3 max-w-sm">Exploring Artificial Intelligence, emerging technologies and the future of innovation.</p>
-            </div>
 
-            <div class="flex gap-8 text-sm text-gray-500">
-                <a href="#" class="hover:text-blue-600">Home</a>
-                <a href="#articles" class="hover:text-blue-600">Articles</a>
-                <a href="#categories" class="hover:text-blue-600">Categories</a>
+                <h3 class="font-semibold mb-4">
+
+                    Quick Links
+
+                </h3>
+
+
+                <div
+                    class="flex flex-col gap-3 text-sm">
+
+                    <a
+                        href="#"
+                        class="text-indigo-200 hover:text-white">
+
+                        Home
+
+                    </a>
+
+
+                    <a
+                        href="#articles"
+                        class="text-indigo-200 hover:text-white">
+
+                        Articles
+
+                    </a>
+
+
+                    <a
+                        href="#categories"
+                        class="text-indigo-200 hover:text-white">
+
+                        Categories
+
+                    </a>
+
+
+                    <a
+                        href="#about"
+                        class="text-indigo-200 hover:text-white">
+
+                        About
+
+                    </a>
+
+                </div>
+
             </div>
 
         </div>
 
-        <div class="border-t border-gray-200 text-center py-5 text-sm text-gray-400">© 2026 AIInsights. All rights reserved.</div>
+
+
+        <!-- Copyright -->
+
+        <div
+            class="border-t border-indigo-700 py-5
+            text-center text-sm text-indigo-300">
+
+            © 2026 AIInsights. All rights reserved.
+
+        </div>
 
     </footer>
 
+
 </body>
+
 </html>
+
